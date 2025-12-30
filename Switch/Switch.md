@@ -1,9 +1,6 @@
 # Switch Configuratie
+<p>
 
-<details class="details-section">
-	<summary class="section-summary">Switch Configuratie</summary>
-
-```
 Building configuration...
 
 Current configuration : 1761 bytes
@@ -117,5 +114,4 @@ transport input telnet
 !
 end
 
-```
-</details>
+<p>

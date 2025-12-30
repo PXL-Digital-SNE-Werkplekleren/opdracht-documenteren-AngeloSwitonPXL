@@ -1,9 +1,6 @@
 # Router Configuratie
 
-<details class="details-section">
-	<summary class="section-summary">Router Configuratie</summary>
-
-```
+<p>
 Building configuration...
 
 Current configuration : 1436 bytes
@@ -111,5 +108,4 @@ transport input ssh
 !
 End
 
-```
-</details>
+</p>
