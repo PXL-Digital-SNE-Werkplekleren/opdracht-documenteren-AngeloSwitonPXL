@@ -1,5 +1,3 @@
-<!-- Sidebar for Docsify -->
-
-* [Home](README.md)
-* [Basisconfiguratie Router](docs/Basisconfiguratie-Router.md)
-* [Basisconfiguratie Switch](docs/Basisconfiguratie-Switch.md)
+<!-- docs/_sidebar.md -->
+* [Router](./Router/Router.md)
+* [Switch](./Switch/Switch.md)
