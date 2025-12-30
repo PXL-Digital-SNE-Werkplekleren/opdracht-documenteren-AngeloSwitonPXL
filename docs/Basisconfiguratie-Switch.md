@@ -1,53 +1,116 @@
 # Basisconfiguratie Switch
+<br>
 
-Voorbeeld van een eenvoudige basisconfiguratie voor een managed switch (Cisco-achtig). Pas VLANs en poorten aan volgens je netwerkontwerp.
+Building configuration...
 
-## Voorbeeldconfiguratie
-
-### 1) Hostnaam en algemene instellingen
-
-```
-hostname Switch1
-no ip domain-lookup
-enable secret MySwitchSecret
+Current configuration : 1761 bytes
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
 service password-encryption
-```
-
-### 2) Management VLAN en IP
-
-```
-vlan 1
- name default
-
+!
+hostname SW-Adm&HR
+!
+enable secret 5 $1$mERr$6ntM9rZIo8y1XNixgfdUi0
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+description Connection to pc 13
+!
+interface FastEthernet0/2
+description Connection to pc 14
+!
+interface FastEthernet0/3
+description Connection to pc 15
+!
+interface FastEthernet0/4
+description Connection to pc 16
+!
+interface FastEthernet0/5
+description Connection to pc 17
+!
+interface FastEthernet0/6
+description Connection to pc 18
+!
+interface FastEthernet0/7
+description Connection to pc 19
+!
+interface FastEthernet0/8
+description Connection to pc 20
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+description Connection to R1 G0/0/0
+!
+interface GigabitEthernet0/2
+!
 interface Vlan1
- ip address 192.168.10.2 255.255.255.0
- no shutdown
-```
+ip address 192.168.0.2 255.255.255.192
+!
+ip default-gateway 192.168.0.1
+!
+banner motd ^C
+==========================================
+Authorized Peronnnel Only 
+==========================================
+^C
+!
+!
+!
+line con 0
+password 7 082042490C150A464058
+login
+!
+line vty 0 4
+password 7 082042490C150A464058
+login
+transport input telnet
+line vty 5 15
+password 7 082042490C150A464058
+login
+transport input telnet
+!
+!
+!
+!
+end
 
-### 3) Poorten en VLAN-toewijzing
-
-```
-interface range GigabitEthernet0/1 - 24
- switchport mode access
- switchport access vlan 10
- spanning-tree portfast
-```
-
-### 4) Trunk naar router
-
-```
-interface GigabitEthernet0/48
- switchport trunk encapsulation dot1q
- switchport mode trunk
- switchport trunk allowed vlan 10,20
-```
-
-### 5) Opslaan en controleren
-
-```
-write memory
-show running-config
-show vlan brief
-```
-
-> Tip: Beveilig management-toegang met ACLs en gebruik SSH voor afstandsbeheer.
