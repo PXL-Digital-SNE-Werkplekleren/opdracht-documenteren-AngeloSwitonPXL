@@ -1,7 +1,7 @@
 ![pxl right](./images/pxl.png)
 # Documenteren
 ## Informatie <!-- {docsify-ignore} -->
-Deze website wordt gebruikt voor het laten zien van mijn router en switch configuratie
+Deze website wordt gebruikt voor het laten zien van mijn router en switch configuratie.
 
 ## Structuur <!-- {docsify-ignore} -->
 Het portfolio bestaat uit 2 delen:
