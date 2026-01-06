@@ -3,115 +3,115 @@
 
 Building configuration...
 
-Current configuration : 1761 bytes
-!
-version 15.0
-no service timestamps log datetime msec
-no service timestamps debug datetime msec
-service password-encryption
-!
-hostname SW-Adm&HR
-!
-enable secret 5 $1$mERr$6ntM9rZIo8y1XNixgfdUi0
-!
-!
-!
-!
-!
-!
-spanning-tree mode pvst
-spanning-tree extend system-id
-!
-interface FastEthernet0/1
-description Connection to pc 13
-!
-interface FastEthernet0/2
-description Connection to pc 14
-!
-interface FastEthernet0/3
-description Connection to pc 15
-!
-interface FastEthernet0/4
-description Connection to pc 16
-!
-interface FastEthernet0/5
-description Connection to pc 17
-!
-interface FastEthernet0/6
-description Connection to pc 18
-!
-interface FastEthernet0/7
-description Connection to pc 19
-!
-interface FastEthernet0/8
-description Connection to pc 20
-!
-interface FastEthernet0/9
-!
-interface FastEthernet0/10
-!
-interface FastEthernet0/11
-!
-interface FastEthernet0/12
-!
-interface FastEthernet0/13
-!
-interface FastEthernet0/14
-!
-interface FastEthernet0/15
-!
-interface FastEthernet0/16
-!
-interface FastEthernet0/17
-!
-interface FastEthernet0/18
-!
-interface FastEthernet0/19
-!
-interface FastEthernet0/20
-!
-interface FastEthernet0/21
-!
-interface FastEthernet0/22
-!
-interface FastEthernet0/23
-!
-interface FastEthernet0/24
-!
-interface GigabitEthernet0/1
-description Connection to R1 G0/0/0
-!
-interface GigabitEthernet0/2
-!
-interface Vlan1
-ip address 192.168.0.2 255.255.255.192
-!
-ip default-gateway 192.168.0.1
-!
-banner motd ^C
-==========================================
-Authorized Peronnnel Only 
-==========================================
-^C
-!
-!
-!
-line con 0
-password 7 082042490C150A464058
-login
-!
-line vty 0 4
-password 7 082042490C150A464058
-login
-transport input telnet
-line vty 5 15
-password 7 082042490C150A464058
-login
-transport input telnet
-!
-!
-!
-!
+Current configuration : 1761 bytes<br>
+!<br>
+version 15.0<br>
+no service timestamps log datetime msec<br>
+no service timestamps debug datetime msec<br>
+service password-encryption<br>
+!<br>
+hostname SW-Adm&HR<br>
+!<br>
+enable secret 5 $1$mERr$6ntM9rZIo8y1XNixgfdUi0<br>
+!<br>
+!<br>
+!<br>
+!<br>
+!<br>
+!<br>
+spanning-tree mode pvst<br>
+spanning-tree extend system-id<br>
+!<br>
+interface FastEthernet0/1<br>
+description Connection to pc 13<br>
+!<br>
+interface FastEthernet0/2<br>
+description Connection to pc 14<br>
+!<br>
+interface FastEthernet0/3<br>
+description Connection to pc 15<br>
+!<br>
+interface FastEthernet0/4<br>
+description Connection to pc 16<br>
+!<br>
+interface FastEthernet0/5<br>
+description Connection to pc 17<br>
+!<br>
+interface FastEthernet0/6<br>
+description Connection to pc 18<br>
+!<br>
+interface FastEthernet0/7<br>
+description Connection to pc 19<br>
+!<br>
+interface FastEthernet0/8<br>
+description Connection to pc 20<br>
+!<br>
+interface FastEthernet0/9<br>
+!<br>
+interface FastEthernet0/10<br>
+!<br>
+interface FastEthernet0/11<br>
+!<br>
+interface FastEthernet0/12<br>
+!<br>
+interface FastEthernet0/13<br>
+!<br>
+interface FastEthernet0/14<br>
+!<br>
+interface FastEthernet0/15<br>
+!<br>
+interface FastEthernet0/16<br>
+!<br>
+interface FastEthernet0/17<br>
+!<br>
+interface FastEthernet0/18<br>
+!<br>
+interface FastEthernet0/19<br>
+!<br>
+interface FastEthernet0/20<br>
+!<br>
+interface FastEthernet0/21<br>
+!<br>
+interface FastEthernet0/22<br>
+!<br>
+interface FastEthernet0/23<br>
+!<br>
+interface FastEthernet0/24<br>
+!<br>
+interface GigabitEthernet0/1<br>
+description Connection to R1 G0/0/0<br>
+!<br>
+interface GigabitEthernet0/2<br>
+!<br>
+interface Vlan1<br>
+ip address 192.168.0.2 255.255.255.192<br>
+!<br>
+ip default-gateway 192.168.0.1<br>
+!<br>
+banner motd ^C<br>
+==========================================<br>
+Authorized Peronnnel Only <br>
+==========================================<br>
+^C<br>
+!<br>
+!<br>
+!<br>
+line con 0<br>
+password 7 082042490C150A464058<br>
+login<br>
+!<br>
+line vty 0 4<br>
+password 7 082042490C150A464058<br>
+login<br>
+transport input telnet<br>
+line vty 5 15<br>
+password 7 082042490C150A464058<br>
+login<br>
+transport input telnet<br>
+!<br>
+!<br>
+!<br>
+!<br>
 end
 
 <p>
